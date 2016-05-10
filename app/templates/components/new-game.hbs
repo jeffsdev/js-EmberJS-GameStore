@@ -41,9 +41,9 @@
         {{input value=type id="type"}}
       </div>
 
-      <button {{action 'saveGame'}}>Save Game</button>
+      <button class="button save-btn"{{action 'saveGame'}}>Save Game</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'gameFormShow'}}>New Game</button>
+  <button class="button new-btn"{{action 'gameFormShow'}}>New Game</button>
 {{/if}}

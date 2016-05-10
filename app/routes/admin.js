@@ -1,9 +1,30 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  // model() {
+  //   return this.store.findAll('game');
+  // },
+
+
   model() {
-    return this.store.findAll('game');
+    return Ember.RSVP.hash({
+      boardgames: this.store.query('game', {
+        orderBy: 'type',
+        equalTo: 'boardgame',
+      }),
+      cardgames: this.store.query('game', {
+        orderBy: 'type',
+        equalTo: 'cardgame',
+      }),
+      tablegames: this.store.query('game', {
+        orderBy: 'type',
+        equalTo: 'tablegame',
+      }),
+      reviews: this.store.findAll('review')
+    });
   },
+
+
   actions: {
     saveGame(params) {
       var newGame = this.store.createRecord('game', params);
@@ -23,7 +44,7 @@ export default Ember.Route.extend({
      Object.keys(params).forEach(function(key) {
        if(params[key]!==undefined) {
          game.set(key,params[key]);
-    
+
        }
      });
      game.save();

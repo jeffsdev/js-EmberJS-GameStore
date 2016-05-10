@@ -1,6 +1,12 @@
 <li class="admin-games">
   <img src="{{game.image}}">
-  <p>{{game.name}}</p>
-  {{update-game game=game updateGame="updateGame"}}
-  <button {{action 'deleteGame' game}}>Delete Game</button>
+  <div class="admin-game-meta">
+    <p><span>Title: </span>{{game.name}}</p>
+    <p><span>Type: </span>{{game.type}}</p>
+    <p><span>Price: </span>${{game.price}}</p>
+  </div>
+  <div>
+    {{update-game game=game updateGame="updateGame"}}
+    <button class="button del-btn"{{action 'deleteGame' game}}>Delete Game</button>
+  </div>
 </li>
