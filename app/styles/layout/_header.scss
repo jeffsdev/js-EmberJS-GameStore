@@ -16,21 +16,29 @@ header {
     }
   }
   nav {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    max-width: 1200px;
+    background: #999;
+    width: 100%;
     margin-bottom: 25px;
-    @media screen and (min-width: 768px) {
-      flex-flow: row;
-      width: 100%;
-      align-items: baseline;
-      justify-content: space-around;
+    .wrapper {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      @media screen and (min-width: 768px) {
+        flex-flow: row;
+        width: 100%;
+        align-items: baseline;
+        justify-content: space-around;
+      }
     }
     a {
       padding: 10px 0;
       font-size: 1.5em;
       font-family: $brand-font;
+      &:last-child {
+        color: $text-color;
+      }
     }
   }
 }

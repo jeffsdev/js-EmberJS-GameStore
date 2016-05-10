@@ -2,10 +2,12 @@
   <header>
     {{#link-to 'index'}}<h1>Game of Games</h1>{{/link-to}}
     <nav>
-      {{#link-to 'boardgames'}}Board Games{{/link-to}}
-      {{#link-to 'cardgames'}}Card Games{{/link-to}}
-      {{#link-to 'tablegame'}}Tabletop RPGs Games{{/link-to}}
-      {{cart-quantity}}
+      <div class="wrapper">      
+        {{#link-to 'boardgames'}}Board Games{{/link-to}}
+        {{#link-to 'cardgames'}}Card Games{{/link-to}}
+        {{#link-to 'tablegame'}}Tabletop RPGs Games{{/link-to}}
+        {{cart-quantity}}
+      </div>
     </nav>
   </header>
   <div class="container">
