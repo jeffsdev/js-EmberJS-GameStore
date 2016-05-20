@@ -1,4 +1,6 @@
-# Ember 2 Gamestore
+# Ember2 - E-Commerce Game Store
+##### April 2016
+##### By Jeff Seymour
 
 ##### This is a basic e-commerce site built with the Ember 2 Javascript framework. Users can view game/product details, add games to their shopping cart, and review products. Through the admin page, an admin user can add, edit, and delete games/products.
 
