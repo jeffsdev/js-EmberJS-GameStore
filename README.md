@@ -1,7 +1,9 @@
 # Ember 2 Gamestore
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+##### This is a basic e-commerce site built with the Ember 2 Javascript framework. Users can view game/product details, add games to their shopping cart, and review products. Through the admin page, an admin user can add, edit, and delete games/products.
+
+## Technologies Used
+Ember 2, JavaScript, Bower, HTML, SCSS, Firebase
 
 ## Prerequisites
 
